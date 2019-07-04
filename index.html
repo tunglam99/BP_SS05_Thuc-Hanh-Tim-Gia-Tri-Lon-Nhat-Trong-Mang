@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [-3,6,6,7,4,100,10]
+    let max = x[0]; // gán max là giá trị đầu tiên của mảng
+    let index = 0; // để lưu chỉ số của phần tử lớn nhất trong mảng.
+
+    for (let i =1; i<x.length; i++) {
+        if (x[i] > max){
+            max = x[i];
+            index = i;
+        }
+    }
+    alert("max " + max + " at position " + index);
+
+</script>
+</body>
+</html>
